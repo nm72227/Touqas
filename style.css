@@ -28,3 +28,33 @@ button {
 button:hover {
     background-color: #2ea44f;
 }
+/* Header styling */
+.main-header {
+    width: 100%;
+    background-color: #000000; /* Deep black background to match your logo */
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+/* Aligning items inside the header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Sizing */
+.site-logo {
+    height: 60px; /* Adjust this number to make the logo bigger or smaller on screen */
+    width: auto;
+    display: block;
+    border-radius: 50%; /* Keeps the circular look perfect */
+    transition: transform 0.3s ease;
+}
+
+.site-logo:hover {
+    transform: scale(1.05); /* Slight pop effect when tapped/hovered */
+}
