@@ -115,7 +115,7 @@ body {
     min-height: 75vh; /* Gives a little more height to show off the counter background */
     
     /* Links your newly uploaded image */
-    background-image: url('counter.png'); 
+    background-image: url('counter.jpg'); 
     background-size: cover; /* Forces image to fit the whole screen perfectly */
     background-position: center; /* Centers the counter image */
     background-repeat: no-repeat;
