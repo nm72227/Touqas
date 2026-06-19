@@ -58,3 +58,36 @@ body {
     display: block;
     border-radius: 50%;
 }
+/* Container to keep logo and text side-by-side */
+.brand-wrapper {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes underline from link */
+}
+
+/* Spacing for the text block */
+.brand-text {
+    margin-left: 12px; /* Pulls the text perfectly close to the logo */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Business Name Styling */
+.business-name {
+    color: #ffffff;
+    font-size: 20px; /* Crisp and prominent on mobile */
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Tagline Styling */
+.tagline {
+    color: #ffcc00; /* Matching the beautiful gold/yellow theme */
+    font-size: 11px; /* Subtle and neat under the main name */
+    margin: 2px 0 0 0;
+    padding: 0;
+    font-style: italic;
+    opacity: 0.9;
+}
