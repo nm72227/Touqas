@@ -48,46 +48,63 @@ body {
 
 .header-container {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+}
+
+.brand-wrapper {
+    display: flex;
+    align-items: center; /* This forces logo and text to stay side-by-side */
+    text-decoration: none;
 }
 
 .site-logo {
-    height: 55px; /* Perfect proportion next to the banner */
+    height: 55px;
     width: auto;
     display: block;
     border-radius: 50%;
-}
-/* Container to keep logo and text side-by-side */
-.brand-wrapper {
-    display: flex;
-    align-items: center;
-    text-decoration: none; /* Removes underline from link */
+    flex-shrink: 0; /* Prevents logo from getting squished */
 }
 
-/* Spacing for the text block */
 .brand-text {
-    margin-left: 12px; /* Pulls the text perfectly close to the logo */
+    margin-left: 12px; /* Spaces text perfectly next to logo */
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-/* Business Name Styling */
+/* Business Name & Letter Colors */
 .business-name {
-    color: #ffffff;
-    font-size: 20px; /* Crisp and prominent on mobile */
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 800;
     margin: 0;
     padding: 0;
-    letter-spacing: 0.5px;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 
-/* Tagline Styling */
+.part-white {
+    color: #ffffff; /* TOU and AS in White */
+}
+
+.part-red {
+    color: #ff2a2a; /* Q in Red */
+}
+
+.part-foods {
+    color: #ffffff; /* Foods in White */
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+/* Yellow Tagline */
 .tagline {
-    color: #ffcc00; /* Matching the beautiful gold/yellow theme */
-    font-size: 11px; /* Subtle and neat under the main name */
-    margin: 2px 0 0 0;
+    color: #ffcc00 !important;
+    font-size: 11px;
+    margin: 4px 0 0 0;
     padding: 0;
     font-style: italic;
-    opacity: 0.9;
+    font-weight: bold;
+    letter-spacing: 0.3px;
 }
