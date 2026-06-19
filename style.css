@@ -115,7 +115,7 @@ body {
     min-height: 75vh; /* Gives a little more height to show off the counter background */
     
     /* Links your newly uploaded image */
-    background-image: url('counter.jpg'); 
+    background-image: url('counter.png'); 
     background-size: cover; /* Forces image to fit the whole screen perfectly */
     background-position: center; /* Centers the counter image */
     background-repeat: no-repeat;
@@ -128,15 +128,9 @@ body {
     text-align: center;
     border-bottom: 1px solid #1a1a24;
 }
-
-/* This adds a dark overlay tint over your image so the text stays clearly readable */
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(11, 12, 16, 0.9) 100%);
-    z-index: 1;
+*.hero-content {
+    position: relative;
+    z-index: 2; /* Forces the text to float safely above the background image layer */
+    max-width: 500px;
+    margin: 0 auto;
 }
