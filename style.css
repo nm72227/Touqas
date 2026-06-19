@@ -271,3 +271,142 @@ body {
     max-width: 500px;
     margin: 0 auto;
 }
+/* ---- 6. Membership Section Styling ---- */
+.membership-section {
+    background-color: #0b0c10; /* Dark premium background matching core sections */
+    padding: 60px 16px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #1f2029;
+}
+
+.membership-title {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.membership-intro-text {
+    color: #a0a0aa;
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: -20px auto 40px auto;
+}
+
+/* Card layout wrapper */
+.membership-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Base style for every card */
+.member-card {
+    background-color: #12131a;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+/* Premium colored boundaries for each level */
+.tier-silver { border: 2px solid #b0b3b8; }
+.tier-gold { border: 2px solid #ffcc00; }
+.tier-platinum { border: 2px solid #e5e4e2; }
+
+.card-header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1f2029;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.card-header-box h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: 800;
+}
+.tier-silver .card-price { color: #b0b3b8; }
+.tier-gold .card-price { color: #ffcc00; }
+.tier-platinum .card-price { color: #e5e4e2; }
+
+/* Popular tag styling for Gold Card */
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #000000;
+    font-size: 10px;
+    font-weight: 900;
+    padding: 3px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+/* Benefits lists rules */
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.benefit-list li {
+    color: #d1d1d6;
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Clean subscription action button */
+.join-card-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #1a1b24;
+    border: 1px solid #1f2029;
+    transition: all 0.2s ease;
+}
+
+.tier-silver .join-card-btn:active { background-color: #b0b3b8; color: #000000; }
+.tier-gold .join-card-btn:active { background-color: #ffcc00; color: #000000; }
+.tier-platinum .join-card-btn:active { background-color: #e5e4e2; color: #000000; }
+
+/* Note area under cards */
+.loyalty-note-box {
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    background-color: #12131a;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: left;
+    border-left: 3px solid #ffcc00;
+    box-sizing: border-box;
+}
+
+.loyalty-note-box p {
+    color: #a0a0aa;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
