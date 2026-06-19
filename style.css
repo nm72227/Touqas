@@ -237,3 +237,37 @@ body {
 .whatsapp-btn:active {
     background-color: #1ebe57;
 }
+/* ---- 5. Brand Story Section Styling ---- */
+.story-section {
+    background-color: #12131a; /* Elevated slightly lighter dark box for contrast */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #1f2029;
+}
+
+.section-tagline {
+    color: #ffcc00; /* Matching gold theme colors */
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.story-title {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.5px;
+}
+
+.story-text {
+    color: #a0a0aa; /* Soft readable gray for phone screens */
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto;
+}
