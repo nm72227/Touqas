@@ -479,3 +479,77 @@ body {
     transform: scale(0.95);
     background-color: #1ebd56;
 }
+/* ---- 8. Customer Reviews Layout Styling ---- */
+.reviews-section {
+    background-color: #0b0c10; /* Elegant alternating deep black background */
+    padding: 60px 16px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #1f2029;
+}
+
+.reviews-main-title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Vertical card stack layout for clean mobile viewing */
+.reviews-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 450px;
+    margin: 30px auto 0 auto;
+}
+
+/* Individual Testimonial Card */
+.review-speech-card {
+    background-color: #12131a; /* Elevated gray dark-mode card tile */
+    border-radius: 14px;
+    padding: 24px;
+    text-align: left;
+    border-left: 4px solid #ffcc00; /* Signature theme gold stripe accent */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.review-rating-stars {
+    font-size: 13px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.review-quote-text {
+    color: #d1d1d6;
+    font-size: 14px;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0 0 16px 0;
+}
+
+/* Reviewer profile info bar */
+.review-author-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #1f2029;
+    padding-top: 12px;
+}
+
+.author-avatar {
+    font-size: 18px;
+    background-color: #1a1b24;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.reviewer-profile-name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
