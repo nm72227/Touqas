@@ -423,3 +423,59 @@ body {
     line-height: 1.5;
     margin: 0;
 }
+/* ---- 10. Floating WhatsApp Pop-up Button Styling ---- */
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Keeps it on top of all other sections */
+    text-decoration: none;
+    display: block;
+}
+
+.whatsapp-pop-up-content {
+    display: flex;
+    align-items: center;
+    background-color: #25d366; /* Official WhatsApp Green */
+    padding: 10px 14px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: pulseGlow 2s infinite;
+}
+
+.popup-chat-text {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 8px;
+    letter-spacing: 0.3px;
+    font-family: sans-serif;
+}
+
+.whatsapp-icon-svg {
+    width: 22px;
+    height: 22px;
+    fill: #ffffff;
+}
+
+/* Gentle pulsing animation to draw user focus quietly */
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        transform: scale(1.04);
+        box-shadow: 0 4px 25px rgba(37, 211, 102, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+}
+
+/* Smooth active press effect for phone screen taps */
+.floating-whatsapp-btn:active .whatsapp-pop-up-content {
+    transform: scale(0.95);
+    background-color: #1ebd56;
+}
