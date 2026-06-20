@@ -556,3 +556,84 @@ body {
     font-weight: 700;
     margin: 0;
 }
+/* ---- 9. Photo Gallery Layout Styling ---- */
+.gallery-section {
+    background-color: #0b0c10; /* Alternating solid dark aesthetic */
+    padding: 60px 0; /* Removing side padding so images scroll edge-to-edge */
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px; /* Clean visual space from reviews above */
+    border-top: 2px solid #ffcc00; /* Signature gold line */
+    overflow: hidden; /* Vital to hide scrollbars popping out on mobile views */
+}
+
+.gallery-main-title {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Master viewport bounding box */
+.gallery-marquee-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Flex row executing the animation loop horizontally */
+.gallery-marquee-track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: scrollLeftToRight 25s linear infinite; /* Smooth continuous speed */
+}
+
+/* Individual picture box wrapper */
+.gallery-img-box {
+    width: 200px; /* Optimized size for high fidelity mobile viewing */
+    height: 150px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #1f2029;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0;
+}
+
+.gallery-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Forces food image to fill the card neatly */
+    display: block;
+}
+
+/* Premium text strip over the images */
+.img-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 12px 8px 6px 8px;
+    text-align: left;
+    box-sizing: border-box;
+    letter-spacing: 0.3px;
+}
+
+/* Left-to-Right moving animation loop mechanism */
+@keyframes scrollLeftToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 10px)); /* Loops back instantly at midpoint seamlessly */
+    }
+}
