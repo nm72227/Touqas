@@ -1096,7 +1096,54 @@ body {
     background-color: #1e1f29;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.1);
 }
+/* ---- Dual Button Layout Array (Cart + WhatsApp Side-by-Side) ---- */
+.item-action-buttons-row {
+    display: flex !important;
+    flex-direction: row !important; /* Forces side-by-side on mobile */
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
 
+/* Common shared button rules */
+.combo-cart-btn, .combo-direct-wa-btn {
+    flex: 1; /* Gives them exactly equal width splitting the card 50/50 */
+    text-align: center;
+    padding: 12px 6px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.1s ease;
+}
+
+/* Left Button: Shopping Cart Styling (Theme Signature Gold) */
+.combo-cart-btn {
+    background-color: #ffcc00;
+    color: #000000;
+}
+
+/* Right Button: Direct Chat Link Styling (Official WhatsApp Green) */
+.combo-direct-wa-btn {
+    background-color: #25d366;
+    color: #ffffff !important;
+}
+
+/* Click feedback animations on mobile screen taps */
+.combo-cart-btn:active {
+    background-color: #cca300;
+    transform: scale(0.97);
+}
+
+.combo-direct-wa-btn:active {
+    background-color: #1ebd56;
+    transform: scale(0.97);
+}
 .dispatch-order-btn {
     background-color: #25d366 !important; /* WhatsApp Green Signature Accent Style Theme */
     color: #ffffff !important;
