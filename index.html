@@ -262,5 +262,75 @@
             </div>
         </div>
     </section>
+<div id="shopping-cart-drawer-layer" class="cart-drawer-overlay">
+        <div class="cart-drawer-panel">
+            <div class="cart-drawer-header">
+                <h2 class="cart-panel-headline">Your Basket 🛒</h2>
+                <button class="cart-panel-close-btn" onclick="toggleCartDrawerBox()">✕</button>
+            </div>
+
+            <div id="cart-items-feed-stack" class="cart-items-scroll-pane">
+                <p class="empty-cart-notice-fallback">Your basket is entirely empty. Grab some food!</p>
+            </div>
+
+            <div class="cart-invoice-summary-sheet">
+                <div class="invoice-summary-row">
+                    <span class="invoice-label-text">Subtotal</span>
+                    <span id="cart-invoice-subtotal-val" class="invoice-price-metric">Rs. 0</span>
+                </div>
+                <div class="invoice-summary-row delivery-row">
+                    <span class="invoice-label-text">Delivery Charge</span>
+                    <span id="cart-invoice-delivery-val" class="invoice-price-metric">Rs. 150</span>
+                </div>
+                <div class="invoice-summary-row total-row-highlight">
+                    <span class="invoice-label-text">Total Bill</span>
+                    <span id="cart-invoice-grandtotal-val" class="invoice-price-metric">Rs. 150</span>
+                </div>
+                
+                <button id="cart-step-proceed-btn" class="cart-prime-action-cta" onclick="showCheckoutFormStep()" disabled>Proceed to Delivery Info</button>
+            </div>
+
+            <div id="cart-checkout-form-wizard" class="checkout-form-overlay-card">
+                <div class="form-wizard-header">
+                    <h3 class="form-wizard-title">Delivery & Checkout Details</h3>
+                    <button class="form-wizard-back-btn" onclick="hideCheckoutFormStep()">← Back</button>
+                </div>
+                <form id="active-checkout-form-node" onsubmit="executeOrderPayloadDispatcher(event)" class="wizard-form-fields-scroller">
+                    <div class="input-field-group">
+                        <label class="field-label-tag">Full Name *</label>
+                        <input type="text" id="order-cust-name" required placeholder="Enter full name" class="form-input-control">
+                    </div>
+                    <div class="input-field-group">
+                        <label class="field-label-tag">Phone Number *</label>
+                        <input type="tel" id="order-cust-phone" required placeholder="e.g., 03001234567" class="form-input-control">
+                    </div>
+                    <div class="input-field-group">
+                        <label class="field-label-tag">Delivery Home Address *</label>
+                        <textarea id="order-cust-address" required placeholder="House#, Street#, Area Sector Location..." class="form-input-control text-area-control"></textarea>
+                    </div>
+                    <div class="input-field-group">
+                        <label class="field-label-tag">Email Address (Optional)</label>
+                        <input type="email" id="order-cust-email" placeholder="name@domain.com" class="form-input-control">
+                    </div>
+
+                    <div class="input-field-group">
+                        <label class="field-label-tag">Payment Method *</label>
+                        <div class="payment-selection-grid">
+                            <label class="payment-radio-tile">
+                                <input type="radio" name="payment_method_route" value="Cash on Delivery (COD)" checked>
+                                <span class="tile-ui-box">💵 Cash On Delivery</span>
+                            </label>
+                            <label class="payment-radio-tile">
+                                <input type="radio" name="payment_method_route" value="EasyPaisa/JazzCash Online Transfer">
+                                <span class="tile-ui-box">📱 Mobile Wallet (EasyPaisa/JazzCash)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="cart-prime-action-cta dispatch-order-btn">🚀 Submit Order via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
