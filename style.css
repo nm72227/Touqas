@@ -481,18 +481,20 @@ body {
 }
 /* ---- 8. Customer Reviews Layout Styling ---- */
 .reviews-section {
-    background-color: #0b0c10; /* Elegant alternating deep black background */
+    background-color: #12131a; /* Distinct dark premium box background */
     padding: 60px 16px;
     box-sizing: border-box;
     text-align: center;
+    margin-top: 40px; /* Forceful gap to separate it from the section above */
+    border-top: 2px solid #ffcc00; /* Signature gold elegant dividing line */
     border-bottom: 1px solid #1f2029;
 }
 
 .reviews-main-title {
-    color: #ffffff;
+    color: #ffffff !important; /* Forced crisp white title text */
     font-size: 24px;
     font-weight: 800;
-    margin: 0;
+    margin: 0 0 30px 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -503,28 +505,28 @@ body {
     flex-direction: column;
     gap: 24px;
     max-width: 450px;
-    margin: 30px auto 0 auto;
+    margin: 0 auto;
 }
 
 /* Individual Testimonial Card */
 .review-speech-card {
-    background-color: #12131a; /* Elevated gray dark-mode card tile */
+    background-color: #1a1b24 !important; /* Lighter dark tile for stark contrast */
     border-radius: 14px;
     padding: 24px;
     text-align: left;
     border-left: 4px solid #ffcc00; /* Signature theme gold stripe accent */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
 }
 
 .review-rating-stars {
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .review-quote-text {
-    color: #d1d1d6;
+    color: #e4e4e7 !important; /* Bright, easy-to-read silver text for reviews */
     font-size: 14px;
     line-height: 1.6;
     font-style: italic;
@@ -535,20 +537,21 @@ body {
 .review-author-info {
     display: flex;
     align-items: center;
-    gap: 10px;
-    border-top: 1px solid #1f2029;
+    gap: 12px;
+    border-top: 1px solid #232430;
     padding-top: 12px;
 }
 
 .author-avatar {
     font-size: 18px;
-    background-color: #1a1b24;
-    padding: 4px;
+    background-color: #12131a;
+    padding: 6px;
     border-radius: 50%;
+    display: inline-block;
 }
 
 .reviewer-profile-name {
-    color: #ffffff;
+    color: #ffffff !important; /* Forced pure white for names */
     font-size: 14px;
     font-weight: 700;
     margin: 0;
